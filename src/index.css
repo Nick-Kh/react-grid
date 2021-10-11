@@ -1,3 +1,33 @@
+.table-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pages-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 30%;
+}
+
+span { 
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+span.selected {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+span.disabled {
+  color:gray;
+  cursor: default;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,10 +37,16 @@ body {
 table {
   margin: 30px;
   border-collapse: collapse;
+  width: 100%;
 }
 
 td, th {
   border: 1px solid #eee;
   min-width: 50px;
-  padding: 2px 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #CECDCD;
 }
